@@ -1,17 +1,17 @@
 class Triangle
   # write code here
   
-  attr_accessor :side_a, :side_b, :side_c
+  attr_accessor :side_1, :side_2, :side_3
   
-  @triangle_sides = []
   
-  def intialize(side_a, side_b, side_c)
-    @triangle_sides << side_a
-    @triangle_sides << side_b
-    @triangle_sides << side_c
+  def initialize(side_1, side_2, side_3)
+    @triangle_sides = []
+    @triangle_sides << side_1
+    @triangle_sides << side_2
+    @triangle_sides << side_3
   end
-  
-    def valid?
+
+  def valid?
     sum_one_two = @triangle_sides[0] + @triangle_sides[1]
     sum_one_three = @triangle_sides[0] + @triangle_sides[2]
     sum_two_three = @triangle_sides[1] + @triangle_sides[2]
